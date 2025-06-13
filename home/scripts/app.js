@@ -1,18 +1,14 @@
 //create hamburger menu
 
-const navEL = document.querySelector('.nav');
+const toggleBtn = document.querySelector('.toggle_btn')
 
-const hamburger = document.querySelector('.hamburger')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
 
-hamburgerEL.addeventlistner("click", () => {
+const menu = document.querySelector('.nav_list')
 
-    navEL.classList.toggle('nav--open');
+toggleBtn.onclick = function () {
+    menu.classList.toggle('nav--open')
+    const isOpen = menu.classList.contains('nav--open')
     
-    hamburgerEL.classList.toggle('.hamburger--open');
-})
-
-navEL.addeventlistner('click', () => {
-    navEL.classList.remove('nav--open');
-    hamburger.classList.remove('hamburger--open');
-
-})
+    toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line";
+}
