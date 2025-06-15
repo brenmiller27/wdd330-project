@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA" content="width=device-width, intial-scale=1.0">
     <title>WDD330-Bren-Miller</title>
     <link rel="stylesheet" href="src/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
 </head>
 <body>
+    <div id="app"></div>
    <header>
             <nav>
                 <a href="#" class ="logo"><img src="home/images/images/logo.PNG" width="130px"> </a> 
-                <a href="#" class ="logo"><img src="home/images/images/trees.PNG" width="200px"></a>
+                <a href="#" class ="logo"><img src="home/images/images/forest.PNG" width="200px"></a>
                 <ul class="nav_list">
                     <li><a href="index.html" class="nav_link">Home</a></li>
                     <li><a href="about.html" class="nav_link">About Us</a> </li>
@@ -28,16 +30,71 @@
             </nav>
 
     </header>
-     <main>
+     <main >
+        <br>
+        <div class="contactus">
+            <title>Get in touch!</title>
+        </div>
+        <br>
+        <div class="box">
+            <div class="contact form">
+                <h1>Get in touch with us</h1>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name:</span>
+                                <input type="text" placeholder="Bren">
+                            </div>
+                             <div class="inputBox">
+                                <span>Last Name:</span>
+                                <input type="text" placeholder="Miller">
+                            </div>
+                        </div>
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email:</span>
+                                <input type="text" placeholder="bren.miller09@gmail.com">
+                            </div>
+                             <div class="inputBox">
+                                <span>Phone:</span>
+                                <input type="text" placeholder="435-279-8776">
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Input message here....."></textarea>>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact info">
+               <!-- <i class="ri-twitter-x-line"></i> -->
+               <!-- <i class="ri-facebook-circle-fill"></i> -->
+               <!-- <i class="ri-instagram-line"></i> -->
+
+            </div>
+            <div class="contact map"></div>
+        </div>
+
 
         
 
     </main>
+    <br>
     
-     <footer><span><img src="home/images/images/forest.PNG" alt="#">@MiillerBikes 2025</span></footer> 
+     <footer><span><img src="home/images/images/trees.PNG" alt="#">@MiillerBikes 2025</span></footer> 
 
 
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
     
     
 </body>

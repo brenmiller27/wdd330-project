@@ -1,0 +1,128 @@
+ :root{
+ line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   --primary-color: #3C3744;
+    --secondary-color: #DFE0E2;
+    --Tertiary-color: #010400; 
+    --Fourth-Color: #28C2FF;
+    --max-width: 1400px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactus title {
+
+    color: var(--primary-color);
+
+    filter: drop-shadow(0 0 2em #646cffaa);
+
+}
+
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+
+}
+
+.contactus .title{
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px 50px;
+    background: var(--primary-color);
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid #010400;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #010400;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]
+{
+    background-color: #242424;
+
+}
+
+.inputBox input:hover::after{
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 25px;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 25px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: #28C2FF;
+    font-weight: 600;
+}

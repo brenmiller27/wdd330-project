@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import { togglebtn } from '../js/my-modules.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -23,15 +24,5 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter'))
 
-const toggleBtn = document.querySelector('.toggle_btn')
+togglebtn();
 
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-
-const menu = document.querySelector('.nav_list')
-
-toggleBtn.onclick = function () {
-    menu.classList.toggle('nav--open')
-    const isOpen = menu.classList.contains('nav--open')
-    
-    toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line";
-}
