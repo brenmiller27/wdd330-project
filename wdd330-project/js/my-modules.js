@@ -1,21 +1,26 @@
-const myModule = require('./my-module');
+leticonCart = document.querySelector('.icon-cart');
+let closeCart = document.querySelector('.close');
+listProductsHtml = document.querySelector('.listProducts');
 
-console.log(myConsole);
+
+let listProducts = [];
 
 
-export function togglebtn(){
+let body = document.querySelector('body')
 
-    const toggleBtn = document.querySelector('.toggle_btn')
 
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+iconCart.addEventListner('click', () => {
+    body.classList.toggle('showCart')
 
-    const menu = document.querySelector('.nav_list')
+})
 
-    toggleBtn.onclick = function() {
-        menu.classList.toggle('nav--open')
-        const isOpen = menu.classList.contains('nav--open')
-        
-        toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line";
-    }
-}
+closeCart.addEventListner('click', () => {
+    body.classList.toggle('showCart')
+
+})
+
+
+
+
+
 

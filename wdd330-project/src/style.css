@@ -21,6 +21,11 @@
 }
 
 
+
+.show{
+  opacity: 1;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -36,10 +41,19 @@ ul {
 
 a{
     text-decoration: none;
-    color: var(--Fourth-Color);
+    color: var(--secondary-color);
     font-family: "Roboto";
+    font-weight: 500px;
 }
 
+html {
+  scroll-behavior: smooth ;
+}
+
+footer {
+  justify-content: center;
+  text-align: center;
+}
 
 
 .logo {
@@ -50,6 +64,32 @@ a{
 
 }
 
+
+.loading {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.loading span{
+    position: relative;
+    width: 20px;
+    height: 5px;
+}
+
+.loading span::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--Fourth-Color);
+    box-shadow: 0 0 15px var(--Fourth-Color),
+     0 0 30px var(--Fourth-Color), 
+     0 0 50px var(--Fourth-Color);
+    ;
+}
+
+
 .logo img:hover {
     transition: transform 1s ease;
     transform: rotate(360deg);
@@ -59,13 +99,14 @@ a{
 body {
    background-color: var(--Tertiary-color);
     font-family: "Roboto", sans-serif;
-    overflow: hidden;
     min-height: 100vh;
+    overflow: scroll;
+    scrollbar-gutter: stable;
+    scrollbar-color:  drop-shadow(0 0 2em #646cffaa); 
 }
 
 
 #app {
-  max-width: 1380px;
   text-align: center;
   margin: 0 auto;
 }
@@ -127,7 +168,6 @@ header {
     padding: 2rem ;
     position: relative;
 }
-
 
 
 
@@ -200,6 +240,48 @@ nav {
 }
 
 
+footer.container{
+  padding-bottom: 4rem;
+}
+
+.footer{
+  width: 80%;
+  color: var(--secondary-color);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footerheading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footerheading a{
+  text-decoration: none;
+  font-weight: 500px;
+  margin-bottom: 0.5rem;
+}
+
+
+.footerheading a:hover{
+   color: var(--Fourth-Color);
+}
+
+
+.footerheading h2{
+  margin-bottom: 2rem;
+}
+
+.footer img{
+  margin-right: 100px;
+}
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -217,6 +299,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 1150px) {
+   .footer{
+    padding-top: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -250,22 +338,10 @@ button:focus-visible {
         display: block;
     }
 
-    .logo{
-        animation-name: slideDown;
-        animation-duration: 2s;
-    }
-
-    @keyframes slideDown {
-
-        from{transform: translateZ(10%);}
-
-    }
-
 
 
    
 }
-
 
 @media screen and (min-width:  550px){
 
