@@ -1,0 +1,59 @@
+[
+ 
+   {
+    "id": 1,
+    "name": "All black plastics",
+    "price" : "1799.00",
+    "image" : "src/images/black500.jpg"
+   
+  },
+
+  {
+    "id": 2,
+    "name": "Black and white plastics", 
+    "price" : "1499.00",
+    "image" : "src/images/dirtbike.jpg"
+   
+  },
+
+   {
+    "id": 3,
+    "name":  "Ghost Color",
+    "price" : "1299.00",
+    "image" : "src/images/whiteblack500.jpg"
+  },
+   {
+    "id": 4,
+    "name": "Red",
+    "price" : "1199.00",
+    "image" : "src/images/red500.jpeg"
+   
+  },
+  {
+    "id": 5,
+    "name": "Turquoise",
+    "price" : "1399.00",
+    "image" : "src/images/turquois100e.jpg"
+  },
+   {
+    "id": 6,
+    "name": "Green Gen 3 Mountain Bike",
+    "price" : "1399.00",
+    "image" : "src/images/black500.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Yellow",
+    "price" : "1399.00",
+    "image" : "src/images/dirtbiker.jpg"
+   
+  },
+  {
+    "id": 8,
+    "name": "Green",
+    "price" : "1399.00",
+    "image" : "src/images/kawasaki.jpg"
+   
+  }
+ 
+]

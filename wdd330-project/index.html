@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA" content="width=device-width, intial-scale=1.0">
     <title>WDD330-Bren-Miller</title>
     <link> <a href="https://run.mocky.io/v3/e8303cdc-43d5-4b68-bfa7-b2921e5064b7"></a>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -17,8 +17,8 @@
     <div id="app"></div>
      <header>
             <nav>
-                <a href="#" class ="logo"><img src="home/images/images/logo.PNG" width="130px"> </a>
-                <a href="#" class ="logo"><img src="home/images/images/forest.PNG" width="200px"></a>
+                <a href="#" class ="logo"><img src="src/images/logo.PNG" width="130px"> </a>
+                <a href="#" class ="logo"><img src="src/images/forest.PNG" width="200px"></a>
                 <ul class="nav_list">
                     <li><a href="index.html" class="nav_link">Home</a></li>
                     <li><a href="about.html" class="nav_link">About Us</a> </li>
@@ -29,6 +29,7 @@
                 <div class="toggle_btn">
                     <i class="ri-menu-line"></i>
                 </div>
+               <div class="cart-icon" onclick="toggleCart()"><i class="ri-shopping-cart-2-line"></i></div> 
             </nav>
     </header>
     <main>
@@ -44,10 +45,10 @@
           <button><a href="about.html"></a>Learn more</button>
         </div>
         <div class="imgBox">
-          <img src="home/images/images/helmet.png" class="yellow"  alt="#">
+          <img src="src/images/helmet.png" class="yellow"  alt="#">
         </div>
         <div class="imgBox">
-          <img src="home/images/images/coolbiker.png" class="yellow"  alt="#">
+          <img src="src/images/coolbiker.png" class="yellow"  alt="#">
         </div>
       </div>
       <div class="loading">
@@ -108,7 +109,7 @@
     </main>
     <div class="footercontainer">
        <footer class="footer">
-        <img src="home/images/images/trees.PNG" alt="#">
+        <img src="src/images/trees.PNG" alt="#">
         <div class="footerheading footer-1">
            <h2>About Us</h2>
             <a href="#">Blog</a>
@@ -133,6 +134,9 @@
         <span> @MiillerBikes 2025 </span>
       </footer> 
     </div>
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="/vite.svg"></script>
+    <script type="module" src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

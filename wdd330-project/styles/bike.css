@@ -71,16 +71,44 @@ footer{
     padding: 0 auto;
 }
 
-div img:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-    transform: scale(1.03);
+.card {
+    background-color: var(--Tertiary-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
 
 }
-
-figcaption {
-    margin-top: 20px;
-    color: var(--secondary-color);
+.listingheader {
     text-align: center;
-    font-weight: 500;
-    margin-bottom: 50px;
+    color: var(--secondary-color);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    color: var(--secondary-color);
+    transform: scale(1.2s);
+}
+
+.card-content {
+    color: var(--secondary-color);
 }

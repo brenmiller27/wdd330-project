@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA" content="width=device-width, intial-scale=1.0">
     <title>WDD330-Bren-Miller</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js">
+    </script>
 </head>
 <body>
     <div id="app"></div>
    <header>
             <nav>
-                <a href="#" class ="logo"><img src="home/images/images/logo.PNG" width="130px"> </a> 
-                <a href="#" class ="logo"><img src="home/images/images/forest.PNG" width="200px"></a>
+                <a href="#" class ="logo"><img src="src/images/logo.PNG" width="130px"> </a> 
+                <a href="#" class ="logo"><img src="src/images/forest.PNG" width="200px"></a>
                 <ul class="nav_list">
                     <li><a href="index.html" class="nav_link">Home</a></li>
                     <li><a href="about.html" class="nav_link">About Us</a> </li>
                     <li><a href="contact.html" class="nav_link">Contact Us</a></li>
                      <li><a href="dirtbike.html" class="nav_link">Dirt bikes</a></li>
-                     <li><a href="bike.html" class="nav_link">Bikess</a></li>
+                     <li><a href="bike.html" class="nav_link">Bikes</a></li>
                 </ul>
                 <div class="toggle_btn">
                     <i class="ri-menu-line"></i>
 
                 </div>
+            <div class="cart-icon" onclick="toggleCart()"><i class="ri-shopping-cart-2-line"></i></div> 
             </nav>
 
     </header>
@@ -39,7 +44,7 @@
                     </p>
                 </div>
                 <div class="imgBox3">
-                    <img src="home/images/images/coollogo.PNG" class="yellow"  alt="#">
+                    <img src="src/images/coollogo.PNG" class="yellow"  alt="#">
                     </div>
          </div>
         <div class="contactus">
@@ -108,9 +113,15 @@
                     <li a href="#"> <i class="ri-instagram-line"></i> </li>
                 </div>
             </div>
-            <div class="contact map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95600.48548121242!2d-112.12755715241653!3d41.51478018623327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87537b19bce31079%3A0xeeb9df2a3b92a006!2sBrigham%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1750002390880!5m2!1sen!2sus"
-                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map">
+                <gmpx-api-loader key="AIzaSyBaL6-SSpq0xdr1__QjGS03ArR3hhh7w5M" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+                </gmpx-api-loader>
+                <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+                <div slot="control-block-start-inline-start" class="place-picker-container">
+                    <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+                </div>
+                <gmp-advanced-marker></gmp-advanced-marker>
+                </gmp-map>
             </div>
         </div>
     </main>
@@ -171,7 +182,7 @@
         </div>
       <div class="footercontainer">
        <footer class="footer">
-        <img src="home/images/images/trees.PNG" alt="#">
+        <img src="src/images/trees.PNG" alt="#">
         <div class="footerheading footer-1">
            <h2>About Us</h2>
             <a href="#">Blog</a>
@@ -196,8 +207,9 @@
         <span> @MiillerBikes 2025 </span>
       </footer> 
     </div>
-
-    <script type="module" defer src="src/main.js"></script>
+    <script type="module" src="/vite.svg"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>
